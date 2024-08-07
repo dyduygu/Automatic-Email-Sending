@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container register-container">
+        <h2>KAYIT OL</h2>
+        <form action="/register" method="post">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Kayıt Ol</button>
+        </form>
+    </div>
+</body>
+</html>
